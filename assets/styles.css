@@ -1,0 +1,111 @@
+:root {
+    --highlightColour: rgb(240, 255, 31);
+    --warmBackground: #FDE68A;
+    --menuBackground: #D97706;
+    --telIcon: "\1f4de";
+    --emailIcon: "\1f582";
+}
+
+body{
+    max-width: 960px;
+    margin-top: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+}
+
+.menuBar {   
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--menuBackground);
+    width: 90%;
+    justify-content: space-between;
+    max-width:900px ;
+    margin: 0px 10px;
+    padding: 20px ;
+    border-radius: 10px;
+}
+
+
+nav {
+    align-items:end;
+    background-color: #92400E;
+    padding: 5px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+nav a {
+    color: var(--highlightColour);
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--warmBackground);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+#logo{
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 20px;
+}
+
+#banner p, #contact p {
+    max-width: 60%;
+}
+
+.contact_form{
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+form input{
+    position: absolute;
+    right: 5px;
+}
+
+
+.boxes {
+    height: 240px;
+    width: 240px;
+    background-color: var(--warmBackground);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boxes:hover{
+    background-color: bisque;
+    scale: 1.1;
+}
+
+
+#contact_form{
+   justify-content: space-around; 
+}
+
+.email_label::before{
+    content: var(--emailIcon)
+}
+.tel_label::before{
+    content: var(--telIcon);
+}
+footer{
+    background-color: var(--menuBackground);
+}
